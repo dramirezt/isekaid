@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/enemies", {data:[{}],fetch:{},mutations:[]});

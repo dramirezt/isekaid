@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/characters/create", {data:[{}],fetch:{},mutations:[]});

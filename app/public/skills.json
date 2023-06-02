@@ -1,0 +1,2239 @@
+[
+    {
+        "name": "health-link",
+        "type": "passive"
+    },
+    {
+        "name": "capture",
+        "type": "action",
+        "range": 3
+    },
+    {
+        "name": "colossal-tentacles",
+        "type": "unique"
+    },
+    {
+        "name": "swallow",
+        "type": "unique"
+    },
+    {
+        "name": "mana-regeneration",
+        "type": "passive",
+        "levels": []
+    },
+    {
+        "name": "second-chance",
+        "type": "passive",
+        "levels": []
+    },
+    {
+        "name": "sense-danger",
+        "type": "passive",
+        "levels": []
+    },
+    {
+        "name": "divine-intervention",
+        "type": "passive",
+        "levels": []
+    },
+    { 
+        "name": "fear-shout",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 1,
+        "bonus": 1,
+        "range": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "overwhelming-charge",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 1,
+        "damageType": "blunt",
+        "mana": 2,
+        "range": 4,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": "2"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    { 
+        "name": "cleave-claw",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 1,
+        "damageType": "cut",
+        "range": 1,
+        "targets": 1,
+        "bonus": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "guardian-wrath",
+        "type": "unique"
+    },
+    {
+        "name": "devour-brood",
+        "type": "unique"
+    },
+    {
+        "name": "raise-the-dead",
+        "type": "unique"
+    },
+    {
+        "name": "poison-bite",
+        "statistic": "strength",
+        "type": "attack",
+        "mana": 1,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 1,
+        "damageType": "pierce",
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "description",
+                        "value": "+1 al daño por veneno"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "call-brood",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 2,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "targets",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "type",
+                        "value": "free"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "spiderweb",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 2,
+        "range": 3,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "targets",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    { 
+        "name": "melee-attack-blunt",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 0,
+        "damageType": "blunt",
+        "range": 1,
+        "targets": 1
+    },
+    { 
+        "name": "ranged-attack-pierce",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 0,
+        "damageType": "pierce",
+        "range": 3,
+        "targets": 1
+    },
+    { 
+        "name": "ranged-attack-magical",
+        "statistic": "magic",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 0,
+        "damageType": "magical",
+        "range": 3,
+        "targets": 1
+    },
+    {
+        "name": "melee-attack-cut",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 0,
+        "damageType": "cut",
+        "range": 1,
+        "targets": 1
+    },
+    {
+        "name": "melee-attack-pierce",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 0,
+        "damageType": "pierce",
+        "range": 1,
+        "targets": 1
+    },
+    {
+        "name": "sixth-sense",
+        "type": "passive",
+        "levels": [
+            {
+                "level": 1,
+                "skills": [
+                    { 
+                        "name": "first-aid",
+                        "level": 1
+                    },
+                    {
+                        "name": "focus-shot",
+                        "level": 1
+                    },
+                    {
+                        "name": "fast-cut",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "statistics": [
+                    {
+                        "statistic": "dexterity",
+                        "value": 1
+                    },
+                    {
+                        "statistic": "strength",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "statistics": [
+                    {
+                        "statistic": "magic",
+                        "value": 1
+                    },
+                    {
+                        "statistic": "mana",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "first-aid",
+        "statistic": "magic",
+        "type": "heal",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "heal": 1,
+        "mana": 2,
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "heal",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["healing-prayer", "healing-orison"]
+    },
+    {
+        "name": "focus-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "bonus": 3,
+        "mana": 2,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 3,
+        "damageType": "pierce",
+        "range": 5,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["double-shot", "powerful-shot"]
+    },
+    {
+        "name": "fast-cut",
+        "statistic": "dexterity",
+        "type": "attack",
+        "mana": 1,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 0,
+        "damageType": "cut",
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "targets",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["bleed-cut", "sonic-cut"]
+    },
+    {
+        "name": "elemental-affinity",
+        "type": "passive",
+        "levels": [
+            {
+                "level": 1,
+                "skills": [
+                    {
+                        "name": "elemental-projectile-earth",
+                        "level": 1
+                    },
+                    {
+                        "name": "elemental-projectile-fire",
+                        "level": 1
+                    },
+                    {
+                        "name": "elemental-projectile-water",
+                        "level": 1
+                    },
+                    {
+                        "name": "elemental-projectile-air",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "statistics": [
+                    {
+                        "statistic": "magic",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "statistics": [
+                    {
+                        "statistic": "mana",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "elemental-projectile-air",
+        "statistic": "magic",
+        "type": "attack",
+        "mana": 1,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "wind",
+        "range": 3,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["whirlwind", "wind-blow"]
+    },
+    {
+        "name": "elemental-projectile-earth",
+        "statistic": "magic",
+        "type": "attack",
+        "mana": 1,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "earth",
+        "range": 3,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["stone-wall", "rock-throw"]
+    },
+    {
+        "name": "elemental-projectile-fire",
+        "statistic": "magic",
+        "type": "attack",
+        "mana": 1,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "fire",
+        "range": 3,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["fireball", "flare"]
+    },
+    {
+        "name": "elemental-projectile-water",
+        "statistic": "magic",
+        "type": "attack",
+        "mana": 1,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "water",
+        "range": 3,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["surge", "water-cannon"]
+    },
+    {
+        "name": "devotion",
+        "type": "passive",
+        "levels": [
+            {
+                "level": 1,
+                "skills": [
+                    {
+                        "name": "holy-shield",
+                        "level": 1
+                    },
+                    {
+                        "name": "faith-blow",
+                        "level": 1
+                    },
+                    {
+                        "name": "healing-touch",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "statistics": [
+                    {
+                        "statistic": "faith",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "statistics": [
+                    {
+                        "name": "mana",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "holy-shield",
+        "statistic": "faith",
+        "type": "shield",
+        "mana": 1,
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "shield": 1,
+        "range": 2,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "type": "shield",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "faith-blow",
+        "statistic": "faith",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "holy",
+        "mana": 1,
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["holy-blow", "divine-lightning"]
+    },
+    {
+        "name": "healing-touch",
+        "statistic": "faith",
+        "type": "heal",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "heal": 1,
+        "mana": 2,
+        "range": 2,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "heal",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["healing-prayer", "healing-orison"]
+    },
+    {
+        "name": "robustness",
+        "type": "passive",
+        "levels": [
+            {
+                "level": 1,
+                "skills": [
+                    {
+                        "name": "draw-attention",
+                        "level": 1
+                    },
+                    {
+                        "name": "powerful-blow",
+                        "level": 1
+                    },
+                    {
+                        "name": "shield-blow",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "level": 2,
+                "statistics": [
+                    {
+                        "statistic": "strength",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "statistics": [
+                    {
+                        "statistic": "constitution",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "draw-attention",
+        "statistic": "constitution",
+        "type": "action",
+        "mana": 1,
+        "range": 4,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "targets",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["taunt", "battlecry"]
+    },
+    {
+        "name": "powerful-blow",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "cut",
+        "mana": 2,
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["colossal-blow", "blunt-blow"]
+    },
+    {
+        "name": "shield-blow",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 1,
+        "damageType": "blunt",
+        "mana": 1,
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "description",
+                        "value": "Si el ataque acierta, empujas al enemigo 1 casilla hacia atrás."
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["shield-charge", "defensive-stance"]
+    },
+    {
+        "name": "double-attack",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "cut",
+        "mana": 2,
+        "range": 1,
+        "targets": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "smoke-screen",
+        "statistic": "magic",
+        "type": "action",
+        "range": 1,
+        "mana": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "type",
+                        "value": "free"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "vanish",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 2,
+        "bonus": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "description",
+                        "value": "Puedes realizar acciones que no sean ataques sin perder el estado invisible."
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ]
+    },
+    {
+        "name": "taunt",
+        "statistic": "constitution",
+        "type": "action",
+        "mana": 2,
+        "range": 3,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["mass-taunt"]
+    },
+    {
+        "name": "battlecry",
+        "statistic": "constitution",
+        "type": "action",
+        "mana": 2,
+        "range": 0,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "type",
+                        "value": "free"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["warcry"]
+    },
+    {
+        "name": "colossal-blow",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 5,
+        "damageType": "cut",
+        "mana": 3,
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["titan-blow"]
+    },
+    {
+        "name": "arc-blow",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "cut",
+        "mana": 2,
+        "range": 1,
+        "targets": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "targets",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "defensive-stance",
+        "statistic": "constitution",
+        "type": "action",
+        "mana": 3,
+        "range": 0,
+        "targets": 1,
+        "bonus": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "type",
+                        "value": "free"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "shield-charge",
+        "statistic": "strength",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 1,
+        "damageType": "blunt",
+        "mana": 2,
+        "bonus": 3,
+        "range": 3,
+        "targets": 3,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "holy-barrier",
+        "statistic": "faith",
+        "type": "shield",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 3,
+        "shield": 1,
+        "range": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "type": "shield",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "sacred-bonds",
+        "statistic": "faith",
+        "type": "action",
+        "mana": 2,
+        "range": 2,
+        "bonus": 2,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "bonus", 
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "holy-blow",
+        "statistic": "faith",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 4,
+        "damageType": "holy",
+        "mana": 2,
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "divine-lightning",
+        "statistic": "faith",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 3,
+        "damageType": "holy",
+        "mana": 3,
+        "range": 3,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "healing-prayer",
+        "statistic": "faith",
+        "type": "heal",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "heal": 2,
+        "mana": 3,
+        "range": 3,
+        "bonus": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "type": "heal",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "healing-orison",
+        "statistic": "faith",
+        "type": "heal",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "heal": 1,
+        "mana": 2,
+        "range": 2,
+        "targets": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "targets",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "bleeding-cut",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "bonus": 1,
+        "mana": 2,
+        "damage": 1,
+        "damageType": "cut",
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "sonic-cut",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 2,
+        "damageType": "cut",
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "targets",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "fireball",
+        "statistic": "magic",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 3,
+        "damageType": "fire",
+        "range": 4,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "fire-wall",
+        "statistic": "magic",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "bonus": 3,
+        "mana": 3,
+        "damage": 1,
+        "damageType": "fire",
+        "range": 3,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "water-surge",
+        "statistic": "magic",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 3,
+        "bonus": 2,
+        "damage": 0,
+        "damageType": "water",
+        "range": 3,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "water-cannon",
+        "statistic": "magic",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 2,
+        "damageType": "water",
+        "range": 4,
+        "targets": 1,
+        "bonus": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "stone-wall",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 2,
+        "bonus": 2,
+        "range": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "rock-thrower",
+        "statistic": "magic",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 3,
+        "damage": 2,
+        "damageType": "earth",
+        "range": 2,
+        "bonus": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "sharp-wind",
+        "statistic": "magic",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 2,
+        "damageType": "wind",
+        "range": 4,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "wind-aura",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 2,
+        "bonus": 2,
+        "range": 0,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "type",
+                        "value": "free"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "field-assistance",
+        "statistic": "magic",
+        "type": "heal",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "heal": 2,
+        "mana": 3,
+        "range": 1,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "type": "heal",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "poison-weapon",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 2,
+        "range": 0,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "type",
+                        "value": "free"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "mind-control",
+        "statistic": "magic",
+        "type": "action",
+        "mana": 3,
+        "bonus": 2,
+        "range": 4,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 2
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "moving-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 1,
+        "damage": 0,
+        "damageType": "pierce",
+        "range": 3,
+        "targets": 1,
+        "bonus": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "range": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["acrobatic-shot", "reactive-shot"]
+    },
+    {
+        "name": "acrobatic-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 1,
+        "damage": 0,
+        "damageType": "pierce",
+        "range": 3,
+        "targets": 1,
+        "bonus": 3,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["bleed-cut", "sonic-cut"]
+    },
+    {
+        "name": "defensive-shot",
+        "statistic": "dexterity",
+        "type": "action",
+        "mana": 1,
+        "damage": 0,
+        "damageType": "pierce",
+        "range": 6,
+        "targets": 1,
+        "bonus": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "type",
+                        "value": "free"
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["bleed-cut", "sonic-cut"]
+    },
+    {
+        "name": "aimed-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 2,
+        "damageType": "pierce",
+        "range": 5,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "range",
+                        "value": 1
+                    },
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["double-shot", "powerful-shot"]
+    },
+    {
+        "name": "double-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "damage": 2,
+        "damageType": "pierce",
+        "mana": 3,
+        "range": 4,
+        "targets": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "mana",
+                        "value": -1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "powerful-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "bonus": 1,
+        "mana": 2,
+        "damage": 3,
+        "damageType": "pierce",
+        "range": 4,
+        "targets": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "pinning-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 1,
+        "damageType": "pierce",
+        "range": 4,
+        "targets": 1,
+        "bonus": 2,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": ["inmobilizing-shot", "crippling-shot"]
+    },
+    {
+        "name": "immobilizing-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 1,
+        "damageType": "pierce",
+        "range": 4,
+        "targets": 1,
+        "bonus": 1,
+        "levels": [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    },
+    {
+        "name": "crippling-shot",
+        "statistic": "dexterity",
+        "type": "attack",
+        "criticalSuccess": 20,
+        "criticalMultilplier": 1.5,
+        "criticalFailure": 1,
+        "mana": 2,
+        "damage": 1,
+        "damageType": "pierce",
+        "range": 4,
+        "targets": 1,
+        "bonus": 2,
+        "levels":  [
+            {
+                "level": 2,
+                "update": [
+                    {
+                        "feature": "bonus",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            },
+            {
+                "level": 3,
+                "update": [
+                    {
+                        "feature": "damage",
+                        "value": 1
+                    }
+                ],
+                "unlockAtTimesUsed": 5
+            }
+        ],
+        "evolutions": []
+    }
+]

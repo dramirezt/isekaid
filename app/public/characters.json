@@ -1,0 +1,499 @@
+[
+    {
+        "name": "Juanan",
+        "class": "explorer",
+        "color": "#627c4a",
+        "type": "character",
+        "combat": {
+            "defense": { 
+                "bonus": 0,
+                "statistic": "dexterity"
+            },
+            "health": { 
+                "base": 4, 
+                "current": 4, 
+                "bonus": 0,
+                "statistic": "constitution"
+            },
+            "initiative": { 
+                "base": 2,
+                "bonus": 0 ,
+                "statistic": "dexterity"
+            },
+            "mana": { 
+                "base": 4, 
+                "current": 2, 
+                "bonus": 0 ,
+                "statistic": "mana"
+            },
+            "speed": { 
+                "base": 4, 
+                "bonus": 0 
+            },
+            "shield": 0
+        },
+        "resistances": {
+            "bleed": {
+                "base": 10,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "physical"
+            },
+            "blunt": {
+                "base": 0,
+                "bonus": 50,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "physical"
+            },
+            "poison": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": -40,
+                "type": "physical"
+            },
+            "pierce": {
+                "base": 50,
+                "bonus": 50,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "physical"
+            },
+            "cut": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "physical"
+            },
+            "earth": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "fire": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "ice": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "lightning": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "water": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "wind": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "unholy": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "holy": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            },
+            "magical": {
+                "base": 0,
+                "bonus": 0,
+                "statistic": "constitution",
+                "temporalModifier": 0,
+                "type": "magical"
+            }
+        },
+        "statistics": {
+            "strength": { "base": 1, "bonus": 0 },
+            "dexterity": { "base": 2, "bonus": 0 },
+            "constitution": { "base": 1, "bonus": 0 },
+            "magic": { "base": 1, "bonus": 0 },
+            "faith": { "base": 0, "bonus": 0 },
+            "mana": { "base": 1, "bonus": 0 }
+        },
+        "skills": [
+            { "skill": "ranged-attack-pierce", "level": 1, "timesUsed": 0 },
+            { "skill": "melee-attack-cut", "level": 1, "timesUsed": 0 },
+            { "skill": "sixth-sense", "level": 1, "timesUsed": 0 },
+            { "skill": "sense-danger", "level": 1, "timesUsed": 0 },
+            { "skill": "focus-shot", "level": 1, "timesUsed": 0 },
+            { "skill": "fast-cut", "level": 1, "timesUsed": 0 },
+            { "skill": "first-aid", "level": 1, "timesUsed": 0}
+        ]
+    },
+    {
+        "name": "Juanfran",
+        "class": "mage",
+        "color": "#964c4c",
+        "type": "character",
+        "combat": {
+            "defense": { 
+                "bonus": 0,
+                "statistic": "dexterity"
+            },
+            "health": { 
+                "base": 4,
+                "statistic": "constitution"
+            },
+            "initiative": { 
+                "base": 2,
+                "statistic": "dexterity"
+            },
+            "mana": { 
+                "base": 4,
+                "statistic": "mana"
+            },
+            "speed": { 
+                "base": 4
+            }
+        },
+        "resistances": {
+            "bleed": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "blunt": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "poison": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "pierce": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "cut": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "earth": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "fire": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "ice": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "lightning": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "water": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "wind": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "unholy": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "holy": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "magical": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            }
+        },
+        "statistics": {
+            "strength": { "base": 0 },
+            "dexterity": { "base": 1 },
+            "constitution": { "base": 0 },
+            "magic": { "base": 2 },
+            "faith": { "base": 0 },
+            "mana": { "base": 3 }
+        },
+        "skills": [
+            { "skill": "ranged-attack-magical", "level": 1 },
+            { "skill": "elemental-affinity", "level": 1 },
+            { "skill": "elemental-projectile-earth", "level": 1 },
+            { "skill": "elemental-projectile-fire", "level": 1 },
+            { "skill": "elemental-projectile-water", "level": 1 },
+            { "skill": "elemental-projectile-air", "level": 1 },
+            { "skill": "mana-regeneration", "level": 1 }
+        ]
+    },
+    {
+        "name": "Mique",
+        "class": "priest",
+        "color": "#6983ca",
+        "type": "character",
+        "combat": {
+            "defense": { 
+                "bonus": 0,
+                "statistic": "dexterity"
+            },
+            "health": { 
+                "base": 4,
+                "statistic": "constitution"
+            },
+            "initiative": { 
+                "base": 2,
+                "statistic": "dexterity"
+            },
+            "mana": { 
+                "base": 4,
+                "statistic": "mana"
+            },
+            "speed": { 
+                "base": 4
+            }
+        },
+        "resistances": {
+            "bleed": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "blunt": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "poison": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "pierce": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "cut": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "earth": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "fire": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "ice": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "lightning": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "water": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "wind": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "unholy": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "holy": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "magical": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            }
+        },
+        "statistics": {
+            "strength": { "base": 1 },
+            "dexterity": { "base": 0 },
+            "constitution": { "base": 1 },
+            "magic": { "base": 0 },
+            "faith": { "base": 2 },
+            "mana": { "base": 2 }
+        },
+        "skills": [
+            { "skill": "melee-attack-blunt", "level": 1 },
+            { "skill": "devotion", "level": 1 },
+            { "skill": "holy-shield", "level": 1 },
+            { "skill": "faith-blow", "level": 1 },
+            { "skill": "healing-touch", "level": 1 },
+            { "skill": "divine-intervention", "level": 1 }
+        ]
+    },
+    {
+        "name": "Christian",
+        "class": "warrior",
+        "color": "#8f3c62",
+        "type": "character",
+        "combat": {
+            "defense": { 
+                "bonus": 0,
+                "statistic": "dexterity"
+            },
+            "health": { 
+                "base": 4,
+                "statistic": "constitution"
+            },
+            "initiative": { 
+                "base": 2,
+                "statistic": "dexterity"
+            },
+            "mana": { 
+                "base": 4,
+                "statistic": "mana"
+            },
+            "speed": { 
+                "base": 4
+            }
+        },
+        "resistances": {
+            "bleed": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "blunt": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "poison": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "pierce": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "cut": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "physical"
+            },
+            "earth": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "fire": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "ice": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "lightning": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "water": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "wind": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "unholy": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "holy": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            },
+            "magical": {
+                "base": 0,
+                "statistic": "constitution",
+                "type": "magical"
+            }
+        },
+        "statistics": {
+            "strength": { "base": 2 },
+            "dexterity": { "base": 1 },
+            "constitution": { "base": 2 },
+            "magic": { "base": 0 },
+            "faith": { "base": 0 },
+            "mana": { "base": 1 }
+        },
+        "skills": [
+            { "skill": "melee-attack-blunt", "level": 1 },
+            { "skill": "devotion", "level": 1 },
+            { "skill": "holy-shield", "level": 1 },
+            { "skill": "faith-blow", "level": 1 },
+            { "skill": "healing-touch", "level": 1 },
+            { "skill": "divine-intervention", "level": 1 }
+        ]
+    }
+]

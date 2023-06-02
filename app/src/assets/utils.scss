@@ -1,0 +1,77 @@
+.margin {
+    &--none {
+        margin: 0 !important;
+    }
+}
+
+.icon {
+    width: 100%;
+
+    &--xxlarge {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+    &--xlarge {
+        max-width: 65px;
+        max-height: 65px;
+    }
+
+    &--large {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    &--medium {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    &--small {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+    &--xsmall {
+        max-width: 16px;
+        max-height: 16px;
+    }
+}
+
+.text {
+    &-color {
+        &--red {
+            color: $red;
+        }
+    
+        &--green {
+            color: $green;
+        }
+    
+        &--lightgray {
+            color: $gray-light;
+        }
+    }
+
+    &-title {
+        font-family: 'Rubik';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    &-subtitle {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+}

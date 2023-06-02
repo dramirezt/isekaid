@@ -1,0 +1,62 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./api/
+    container_name: isekaid_api
+    restart: unless-stopped
+    volumes:
+      - ./api:/var/www/api
+      - /var/www/api/vendor
+
+  app:
+    build: ./app/
+    container_name: isekaid_app
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app:/var/www/app
+      - /var/www/app/node_modules
+    environment: 
+      - CHOKIDAR_USEPOLLING=true"
+    command: "npm run dev"
+    networks:
+      - isekaid
+
+  server:
+    image: nginx:alpine
+    container_name: isekaid_nginx
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 444:443
+    volumes:
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    links: 
+      - api
+      - app
+    networks:
+      - isekaid
+
+  db:
+    image: mysql:8.0.32
+    container_name: isekaid_database
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      MYSQL_DATABASE: $DB_DATABASE
+      MYSQL_ROOT_PASSWORD: $DB_PASSWORD
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - isekaid
+
+networks:
+  isekaid:
+    driver: bridge
+
+volumes:
+  dbdata:
